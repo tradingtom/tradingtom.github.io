@@ -1,0 +1,145 @@
+body {
+  font-family: "Open Sans",arial,x-locale-body,sans-serif;
+}
+
+span.error {
+  font-weight: bold;
+  font-color: red;
+}
+
+div.feeds {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.feed {
+  margin: 10px;
+  height: 600px;
+  width: 420px;
+  overflow: auto;
+  background: rgba(114, 114, 114, 0.10);
+}
+
+div.feed div.header {
+  height: 2em;
+  display: flex;
+}
+
+div.feed div.config {
+  height: 3em;
+  display: flex;
+}
+
+div.feed div.header button {
+  width: 10%;
+}
+
+div.feed div.header h3 {
+  text-align: center;
+  width: 90%;
+  margin: 0.5em;
+}
+
+div.feed div.config {
+  display: flex;
+  width: 100%;
+  height: 2.5em;
+}
+
+div.feed div.config input {
+  text-align: center;
+}
+
+div.feed div.config div.totals-control {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+div.feed div.config div.totals-control input {
+  width: 35%;
+  margin: 0 0.5em;
+}
+
+div.feed div.config div.totals {
+  width: 40%;
+}
+
+div.feed div.config div.totals div.row {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+div.feed div.config div.totals div.side {
+  width: 10%;
+  text-align: right;
+  margin-right: 0.5em;
+}
+
+div.feed div.config div.ttl-control {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+div.feed div.config div.ttl-control input {
+  width: 50%;
+  margin: 0 0.5em;
+}
+
+div.feed table.trades {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+div.feed table.trades th.time {
+  width: 45%;
+}
+
+div.feed table.trades th.side {
+  width: 10%;
+}
+
+div.feed table.trades th.size {
+  width: 25%;
+}
+
+div.feed table.trades th.price {
+  width: 20%;
+}
+
+div.feed table.trades tr:nth-child(odd) {
+  background: rgba(195,195,195,0.25);
+}
+
+div.feed table.trades tr:nth-child(even) {
+  background: #fff;
+}
+
+div.feed table.trades tr > * {
+  border: 1.5px solid #bfbfbf;
+}
+
+div.feed table.trades td.side {
+  text-align: center;
+  font-weight: bold;
+}
+
+div.feed table.trades td.side.buy {
+  background-color: #8ae07a;
+}
+
+div.feed table.trades td.side.sell {
+  background-color: #e07a7a;
+}
+
+div.bottom-right-block {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
